@@ -1,0 +1,237 @@
+{% extends "renovation/index.html" %}
+{% load staticfiles %}
+
+	{% block content %}
+			<!--breadcrumbs-->
+			<div class="breadcrumbs bg_grey_light_2 fs_medium fw_light">
+				<div class="container">
+					<a href="index.html" class="sc_hover">Home</a> / <a href="portfolio_1_column_with_sidebar.html" class="sc_hover">Portfolio</a> / <span class="color_light">{{item.name}}</span>
+				</div>
+			</div>
+			<!--main content-->
+			<div class="page_section_offset">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 col-sm-9 m_xs_bottom_10 m_bottom_25">
+							<h3 class="second_font color_dark m_bottom_2">{{item.name}}</h3>
+							<a href="#" class="color_light sc_hover fw_light">{{item.desc}}</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 t_align_r t_xs_align_l m_xs_bottom_30">
+							<div class="clearfix d_inline_b">
+								<a href="#" class="brands_carousel_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5 t_align_c"><i class="fa fa-angle-left d_inline_m"></i></a>
+								<a href="#" class="brands_carousel_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child t_align_c"><i class="fa fa-angle-right d_inline_m"></i></a>
+							</div>
+						</div>
+					</div>
+					<!--project slideshow-->
+					<div class="simple_slideshow relative m_bottom_25 m_xs_bottom_30" data-flexslider-options='{}'>
+						<ul class="slides">
+							<li><img src="{% static 'images/index_submenu/4.jpg' %}" alt=""></li>
+							<li><img src="{% static 'images/index_submenu/3.jpg' %}" alt=""></li>
+							<li><img src="{% static 'images/index_submenu/2.jpg' %}" alt=""></li>
+						</ul>
+					</div>
+					<div class="row relative">
+						<div class="col-lg-8 col-md-8 col-sm-8 m_xs_bottom_30 m_bottom_48">
+							<p class="fw_light m_bottom_25">{{item.desc}}</p>
+<!-- 							<p class="d_inline_m m_right_5 fw_light">Share this:</p>
+							<div class="d_inline_m addthis_widget_container">
+								<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+								<a class="addthis_button_preferred_1"></a>
+								<a class="addthis_button_preferred_2"></a>
+								<a class="addthis_button_preferred_3"></a>
+								<a class="addthis_button_preferred_4"></a>
+								<a class="addthis_button_compact"></a>
+								<a class="addthis_counter addthis_bubble_style"></a>
+								</div>
+							</div> -->
+						</div>
+						<aside class="col-lg-4 col-md-4 col-sm-4 m_xs_bottom_30 m_bottom_48">
+							<ul class="m_bottom_14">
+								<li class="m_bottom_3"><span class="project_list_title second_font d_inline_b">Manufacturer:</span> <span class="color_dark fw_light">Chanel</span></li>
+								<li class="m_bottom_3"><span class="project_list_title second_font d_inline_b">Availability:</span> <span class="scheme_color fw_light">in stock</span> <span class="fw_light">20 items(s)</span></li>
+								<li class="m_bottom_3"><span class="project_list_title second_font d_inline_b">Product Code:</span> <span class="fw_light">PS06</span></li>
+								<li class="m_bottom_3"><span class="project_list_title second_font d_inline_b">Tags:</span> <a href="#" class="fw_light color_dark sc_hover">furniture</a>, <a href="#" class="fw_light color_dark sc_hover">table</a>, <a href="#" class="fw_light color_dark sc_hover">sofa</a></li>
+							</ul>
+						</aside>
+					</div>
+	
+				</div>
+			</div>
+{% endblock %}
+
+{% block footer %}
+			<!--footer-->
+			<footer role="contentinfo" class="p_top_0">
+				<div class="section_offset bg_grey_light_2 m_bottom_35 m_xs_bottom_30">
+					<div class="container m_top_10">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 m_bottom_15 m_xs_bottom_30">
+								<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Tags</h5>
+								<hr class="divider_bg m_bottom_25">
+								<!--tags-->
+								<ul class="hr_list tags_list second_font fs_medium">
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">bed</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">bestseller</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">chair</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">chaise</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">desk</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">dresser</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">ottoman</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">sale</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">sleeper</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">sofa</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">stool</a></li>
+									<li class="m_right_3 m_bottom_3"><a href="#" class="tr_delay button_type_1 d_block grey state_2">table</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3 m_bottom_15 m_xs_bottom_30">
+								<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Latest Tweets</h5>
+								<hr class="divider_bg m_bottom_25">
+								<!--twitter feed-->
+								<div class="tweets_list_container"></div>
+							</div>
+							<!--contact info-->
+							<div class="col-lg-3 col-md-3 col-sm-3 m_bottom_15 m_xs_bottom_30">
+								<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Contact Us</h5>
+								<hr class="divider_bg m_bottom_25">
+								<p class="second_font m_bottom_15">8901 Marmora Road, Glasgow, D04</p>
+								<ul class="second_font vr_list_type_2">
+									<li><i class="fa fa-phone color_dark fs_large"></i>800-599-65-80</li>
+									<li class="w_break" data-icon=""><i class="fa fa-envelope color_dark"></i><a href="mailto:#" class="sc_hover d_inline_b">info@companyname.com</a></li>
+								</ul>
+							</div>
+							<!--stay connected-->
+							<div class="col-lg-3 col-md-3 col-sm-3 m_bottom_15 m_xs_bottom_0">
+								<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Stay Connected</h5>
+								<hr class="divider_bg m_bottom_30">
+								<!--social buttons-->
+								<ul class="hr_list">
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-facebook fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Facebook</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-twitter fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Twitter</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-google-plus fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Google Plus</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-rss fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">RSS</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-pinterest fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Pinterest</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-instagram fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Instagram</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-linkedin fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">LinkedIn</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-vimeo-square fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Vimeo</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-youtube-play fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Youtube</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-flickr fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Flickr</span></a>
+									</li>
+									<li class="m_right_3 m_bottom_3">
+										<a href="#" class="button_type_6 d_block grey state_2 tr_delay color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-envelope fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Contact Us</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 m_bottom_13 m_sm_bottom_30">
+									<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Catalog</h5>
+									<hr class="divider_bg m_bottom_25">
+									<ul class="second_font vr_list_type_1 with_links">
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Living Rooms</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Bedrooms</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Dining Rooms</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Kids Rooms</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>New</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Sale</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 m_bottom_13 m_sm_bottom_30">
+									<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">The Services</h5>
+									<hr class="divider_bg m_bottom_25">
+									<ul class="second_font vr_list_type_1 with_links">
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>My account</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Order history</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Wishlist</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Vendor contact</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Front page</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Categories</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 m_bottom_13 m_sm_bottom_30">
+									<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Information</h5>
+									<hr class="divider_bg m_bottom_25">
+									<ul class="second_font vr_list_type_1 with_links">
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>About us</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>New collection</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Best sellers</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Manufacturers</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Privacy policy</a></li>
+										<li class="m_bottom_14"><a href="#" class="sc_hover d_inline_b"><i class="fa fa-caret-right"></i>Terms &amp; condition</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 m_bottom_13 m_sm_bottom_30">
+									<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Like Us On Facebook</h5>
+									<hr class="divider_bg m_bottom_15">
+									<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fthemeforest&amp;width=235&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=438889712801266" style="border:none; overflow:hidden; width:235px; height:258px;"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="divider_black m_bottom_13">
+					<div class="d_table w_full d_xs_block t_xs_align_c">
+						<div class="col-lg-6 col-md-6 col-sm-6 color_light fw_light f_none d_table_cell v_align_m d_xs_block m_xs_bottom_10">
+							&copy; 2014 <a href="index.html" class="sc_hover">CosyOne</a>. All Rights Reserved.
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 t_align_r t_xs_align_c f_none d_table_cell v_align_m d_xs_block">
+							<ul class="hr_list d_inline_b">
+								<li class="m_right_5"><img src="{% static 'images/payment_1.jpg' %}" alt=""></li>
+								<li class="m_right_5"><img src="{% static 'images/payment_2.jpg' %}" alt=""></li>
+								<li class="m_right_5"><img src="{% static 'images/payment_3.jpg' %}" alt=""></li>
+								<li class="m_right_5"><img src="{% static 'images/payment_4.jpg' %}" alt=""></li>
+								<li class="m_right_5"><img src="{% static 'images/payment_5.jpg' %}" alt=""></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!--back to top-->
+		<button class="back_to_top animated button_type_6 grey state_2 d_block black_hover f_left vc_child tr_all"><i class="fa fa-angle-up d_inline_m"></i></button>
+
+		<!--libs include-->
+		<script src="{% static 'plugins/jquery.appear.js' %}"></script>
+		<script src="{% static 'plugins/flexslider/jquery.flexslider-min.js' %}"></script>
+		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-5306f8f674bfda4c"></script>
+		<script src="{% static 'plugins/jackbox/js/jackbox-packed.min.js' %}"></script>
+		<script src="{% static 'plugins/owl-carousel/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'plugins/twitter/jquery.tweet.min.js' %}"></script><script src="{% static 'plugins/flickr.js' %}" ></script>
+		<script src="{% static 'plugins/afterresize.min.js' %}"></script>
+		<script src="{% static 'js/retina.min.js' %}"></script>
+
+		<!--theme initializer-->
+		<script src="{% static 'js/themeCore.js' %}"></script>
+		<script src="{% static 'js/theme.js' %}"></script>
+	</body>
+</html>
+{% endblock %}

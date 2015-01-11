@@ -4,14 +4,14 @@
 <html lang="en">
 	<head>
 
-		<title>BolehLand - Johor Renovation Expert</title>
+		<title>BolehLands - Johor Renovation Expert</title>
 		<meta charset="utf-8">
 		<!--add responsive layout support-->
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!--meta info-->
 		<meta name="author" content="">
 		<meta name="keywords" content="malaysia renovation, kl interior design, johor bahru interior design">
-		<meta name="description" content="malaysia one stop renovation website">
+		<meta name="description" content="We provide one stop solution interior design & home renovation for customer's need. ">
 		<!--include favicon-->
 		<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/fav.ico' %}">
 		<!--fonts include-->
@@ -22,8 +22,11 @@
 		<link rel="stylesheet" type="text/css" media="all" href="{% static 'plugins/owl-carousel/assets/owl.carousel.min.css' %}">
 		<link rel="stylesheet" type="text/css" media="all" href="{% static 'plugins/fancybox/jquery.fancybox.css' %}">
 		<link rel="stylesheet" type="text/css" media="all" href="{% static 'plugins/jackbox/css/jackbox.min.css' %}">
-		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/animate.css' %}">
-		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" type="text/css" media="all" href="{% static 'plugins/flexslider/flexslider.css' %}">
+
+
+<!-- 		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/animate.css' %}">
+ -->		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/bootstrap.min.css' %}">
 		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/style.css' %}">
 		<!--[if lte IE 10]><link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/ie.css"><![endif]-->
 		<!--head libs-->
@@ -38,7 +41,7 @@
 	
 	</head>
 	{% endblock %}
-    
+    {% block header %}
 	<body class="sticky_menu">
 		<!-- <div id="preloader"></div> -->
 		<!--layout-->
@@ -62,7 +65,7 @@
 					</div>
 				</div>
 			</div> -->
-			{% block header %}
+			
 			<header role="banner" class="w_inherit">
 				<!--top part-->
 				<div class="header_top_part p_top_0 p_bottom_0">
@@ -397,12 +400,12 @@
 			<div class="layerslider" style="width:100%;height:550px;">
 				<div class="ls-slide" data-ls="transition2d: all;">
 					<!--slide image-->
-					<img src="{% static 'images/slide_04.jpg' %}" alt="" class="ls-bg">
+					<img src="{% static 'images/slider-folder/slider_01.jpg' %}" alt="" class="ls-bg">
 					<!--slide thumbnail-->
-					<img src="{% static 'images/slide_04.jpg' %}" alt="" class="ls-tn">
+					<img src="{% static 'images/slider-folder/slider_02.jpg' %}" alt="" class="ls-tn">
 					<!--slide layers-->
 					<p class="ls-l color_white fw_light tt_uppercase" style="left:0px;top:115px;font-size:1.285em;" data-ls="offsetxin:-100;delayin:400;easingin:easeOutBack;durationin:700;">Shapes, Sizes And Styles</p>
-					<h1 class="ls-l color_white second_font tt_uppercase fw_thin" style="left:0px;top:156px;font-size:4.285em;line-height:.94em;" data-ls="offsetxin:-100;delayin:600;easingin:easeOutBack;durationin:700;"><b>Kitchen</b> That<br>works <b>perfectly</b><br><b>for you</b></h1>
+					<h1 class="ls-l color_white second_font tt_uppercase fw_thin" style="left:0px;top:156px;font-size:4.285em;line-height:.94em;" data-ls="offsetxin:-100;delayin:600;easingin:easeOutBack;durationin:700;"><b>Living Room</b> That<br>works <b>perfectly</b><br><b>for you</b></h1>
 					<a href="#" class="ls-l d_block button_type_5 bg_transparent slider_button color_white tt_uppercase fw_light" style="left:0px;font-size:1.428em;top:368px;" data-ls="offsetxin:-100;delayin:700;easingin:easeOutBack;durationin:700;">Find It Here</a>
 				</div>
 				<div class="ls-slide" data-ls="transition2d: all;">
@@ -439,7 +442,7 @@
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<!--banner-->
 							<figure class="relative wrapper scale_image_container m_bottom_30 r_image_container">
-								<img src="{% static 'images/home_img_1.jpg' %}" alt="" class="tr_all scale_image">
+								<img src="{% static 'images/index_submenu/2.jpg' %}" alt="" class="tr_all scale_image">
 								<!--caption-->
 								<figcaption class="caption_type_1 tr_all">
 									<div class="d_inline_b color_white fw_light caption_title tt_uppercase bg_lbrown_translucent">
@@ -463,7 +466,7 @@
 						<div class="col-lg-4 col-md-4 col-sm-4">
 							<!--banner-->
 							<figure class="relative wrapper scale_image_container r_image_container m_xs_bottom_30">
-								<img src="{% static 'images/home_img_2.jpg' %}" alt="" class="tr_all scale_image">
+								<img src="{% static 'images/index_submenu/4.jpg' %}" alt="" class="tr_all scale_image">
 								<!--caption-->
 								<figcaption class="caption_type_1 tr_all">
 									<div class="d_inline_b color_white fw_light caption_title tt_uppercase bg_lbrown_translucent">
@@ -491,7 +494,7 @@
 							</div>
 							<!--banner-->
 							<figure class="relative wrapper scale_image_container r_image_container">
-								<img src="{% static 'images/home_img_3.jpg' %}" alt="" class="tr_all scale_image">
+								<img src="{% static 'images/index_submenu/3.jpg' %}" alt="" class="tr_all scale_image">
 								<!--caption-->
 								<figcaption class="caption_type_1 tr_all">
 									<div class="d_inline_b color_white fw_light caption_title tt_uppercase bg_lbrown_translucent">
@@ -527,14 +530,16 @@
 						<div id="tab-1">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-sm-6">
+									
 									<div class="row">
+										{% for item in items %}
 										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 w_mxs_full m_xs_bottom_30 animated hidden" data-animation="fadeInDown">
 											<!--product-->
 											<figure class="product_item relative c_image_container frame_container t_sm_align_c r_image_container">
 												<!--image & buttons & label-->
 												<div class="relative">
-													<a href="#" class="d_block">
-														<img src="{% static 'images/home_img_4.jpg' %}" alt="" class="c_image_1 tr_all">
+													<a href="/scene/{{item.id}}" class="d_block">
+														<img src="{% static 'images/index_submenu/8.jpg' %}" alt="" class="c_image_1 tr_all">
 														<img src="{% static 'images/home_v3_img_3.jpg' %}" alt="" class="c_image_2 tr_all">
 													</a>
 													<div class="product_label fs_ex_small circle color_white bg_lbrown t_align_c vc_child tt_uppercase"><i class="d_inline_m">Sale!</i></div>
@@ -556,162 +561,26 @@
 												<figcaption class="bg_white relative">
 													<div class="row">
 														<div class="col-lg-7 col-md-7 m_bottom_7">
-															<a class="second_font sc_hover d_xs_block" href="#">Sed in lacus ut enim</a>
-															<a href="#" class="fw_light color_light sc_hover">Chaises</a>
+															<a class="second_font sc_hover d_xs_block" href="#">{{item.name}}</a>
+															<a href="#" class="fw_light color_light sc_hover"></a>
 														</div>
-														<div class="col-lg-5 col-md-5 color_light fs_large second_font t_align_r t_sm_align_c m_bottom_5">
-															<s>$1 302.00</s>
-															<b class="scheme_color d_block">$1 102.00</b>
-														</div>
-													</div>
-													<ul class="rating_list hr_list d_sm_inline_b">
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li><i class="fa fa-star tr_all"></i></li>
-														<li><i class="fa fa-star tr_all"></i></li>
-													</ul>
-												</figcaption>
-											</figure>
-										</div>
-										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 w_mxs_full m_xs_bottom_30 animated hidden" data-animation="fadeInDown" data-animation-delay="150">
-											<!--product-->
-											<figure class="product_item relative c_image_container frame_container t_sm_align_c r_image_container">
-												<!--image & buttons & label-->
-												<div class="relative">
-													<a href="#" class="d_block">
-														<img src="{% static 'images/home_v3_img_4.jpg' %}" alt="" class="c_image_1 tr_all">
-														<img src="{% static 'images/home_img_5.jpg' %}" alt="" class="c_image_2 tr_all">
-													</a>
-													<div class="product_buttons_container bg_white tr_all">
-														<div class="row">
-															<div class="col-lg-8 col-md-8">
-																<div class="clearfix m_sm_bottom_3 d_sm_inline_b">
-																	<button class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative"><i class="fa fa-heart fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Wishlist</span></button>
-																	<button class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative"><i class="fa fa-arrow-right fs_small d_inline_m"></i><i class="fa fa-arrow-left fs_small d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Compare</span></button>
-																	<button data-popup="#quick_view" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative m_sm_right_0"><i class="fa fa-eye fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Quick View</span></button>
-																</div>
-															</div>
-															<div class="col-lg-4 col-md-4 t_align_r t_sm_align_c">
-																<button data-popup="#add_to_cart_popup" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="button_type_8 tr_all lbrown color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-shopping-cart fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Cart</span></button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<figcaption class="bg_white relative">
-													<div class="row">
-														<div class="col-lg-7 col-md-7 m_bottom_7">
-															<a class="second_font sc_hover d_xs_block" href="#">Eget elementum vel</a>
-															<a href="#" class="fw_light color_light sc_hover">Bookcases</a>
-														</div>
-														<div class="col-lg-5 col-md-5 color_light fs_large second_font t_align_r t_sm_align_c m_bottom_5">
-															<b class="scheme_color d_block">$730.00</b>
-														</div>
+										<!-- 				<div class="col-lg-5 col-md-5 color_light fs_large second_font t_align_r t_sm_align_c m_bottom_5">
+															<s>RM 1800.00</s>
+															<b class="scheme_color d_block">$1 500.00</b>
+														</div> -->
 													</div>
 													<ul class="rating_list hr_list d_sm_inline_b">
 														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
 														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
 														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
 														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+														<!-- <li><i class="fa fa-star tr_all"></i></li> -->
 														<li><i class="fa fa-star tr_all"></i></li>
 													</ul>
 												</figcaption>
 											</figure>
 										</div>
-									</div>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6">
-									<div class="row">
-										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 w_mxs_full m_mxs_bottom_30 animated hidden"  data-animation="fadeInDown" data-animation-delay="300">
-											<!--product-->
-											<figure class="product_item relative c_image_container frame_container t_sm_align_c r_image_container">
-												<!--image & buttons & label-->
-												<div class="relative">
-													<a href="#" class="d_block">
-														<img src="{% static 'images/home_img_6.jpg' %}" alt="" class="c_image_1 tr_all">
-														<img src="{% static 'images/home_v3_img_5.jpg' %}" alt="" class="c_image_2 tr_all">
-													</a>
-													<div class="product_label fs_ex_small circle color_white bg_scheme_color t_align_c vc_child tt_uppercase"><i class="d_inline_m">New!</i></div>
-													<div class="product_buttons_container bg_white tr_all">
-														<div class="row">
-															<div class="col-lg-8 col-md-8">
-																<div class="clearfix d_sm_inline_b t_sm_align_c m_sm_bottom_3">
-																	<button class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative"><i class="fa fa-heart fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Wishlist</span></button>
-																	<button class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative"><i class="fa fa-arrow-right fs_small d_inline_m"></i><i class="fa fa-arrow-left fs_small d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Compare</span></button>
-																	<button data-popup="#quick_view" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative m_sm_right_0"><i class="fa fa-eye fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Quick View</span></button>
-																</div>
-															</div>
-															<div class="col-lg-4 col-md-4 t_sm_align_c t_align_r">
-																<button data-popup="#add_to_cart_popup" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="button_type_8 tr_all lbrown color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-shopping-cart fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Cart</span></button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<figcaption class="bg_white relative">
-													<div class="row">
-														<div class="col-lg-8 col-md-8 m_bottom_7">
-															<a class="second_font sc_hover d_xs_block" href="#">Mauris accumsan nulla</a>
-															<a href="#" class="fw_light color_light sc_hover">Beds</a>
-														</div>
-														<div class="col-lg-4 col-md-4 color_light fs_large second_font t_align_r t_sm_align_c m_bottom_5">
-															<b class="scheme_color d_block">$995.00</b>
-														</div>
-													</div>
-													<ul class="rating_list hr_list d_sm_inline_b">
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-													</ul>
-												</figcaption>
-											</figure>
-										</div>
-										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 w_mxs_full animated hidden"  data-animation="fadeInDown" data-animation-delay="450">
-											<!--product-->
-											<figure class="product_item relative c_image_container frame_container t_sm_align_c r_image_container">
-												<!--image & buttons & label-->
-												<div class="relative">
-													<a href="#" class="d_block">
-														<img src="{% static 'images/home_img_7.jpg' %}" alt="" class="c_image_1 tr_all">
-														<img src="{% static 'images/home_v3_img_6.jpg' %}" alt="" class="c_image_2 tr_all">
-													</a>
-													<div class="product_label fs_ex_small circle color_white bg_grey t_align_c vc_child tt_uppercase lh_small"><i class="d_inline_m">Out Of<br>Stock!</i></div>
-													<div class="product_buttons_container bg_white tr_all">
-														<div class="row">
-															<div class="col-lg-8 col-md-8">
-																<div class="clearfix d_sm_inline_b t_sm_align_c m_sm_bottom_3">
-																	<button class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative"><i class="fa fa-heart fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Wishlist</span></button>
-																	<button class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative"><i class="fa fa-arrow-right fs_small d_inline_m"></i><i class="fa fa-arrow-left fs_small d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Compare</span></button>
-																	<button data-popup="#quick_view" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="button_type_8 grey state_2 tr_delay color_dark t_align_c vc_child f_left m_right_3 tooltip_container relative m_sm_right_0"><i class="fa fa-eye fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Quick View</span></button>
-																</div>
-															</div>
-															<div class="col-lg-4 col-md-4 t_sm_align_c t_align_r">
-																<button data-popup="#add_to_cart_popup" data-popup-transition-in="bounceInUp" data-popup-transition-out="bounceOutUp" class="button_type_8 tr_all lbrown color_dark t_align_c vc_child tooltip_container relative"><i class="fa fa-shopping-cart fs_large d_inline_m"></i><span class="tooltip top fs_small color_white hidden animated" data-show="fadeInDown" data-hide="fadeOutUp">Add to Cart</span></button>
-															</div>
-														</div>
-													</div>
-												</div>
-												<figcaption class="bg_white relative">
-													<div class="row">
-														<div class="col-lg-7 col-md-7 m_bottom_7">
-															<a class="second_font sc_hover d_xs_block" href="#">Praesent justo dolor</a>
-															<a href="#" class="fw_light color_light sc_hover">Tables</a>
-														</div>
-														<div class="col-lg-5 col-md-5 t_sm_align_c color_light fs_large second_font t_align_r m_bottom_5">
-															<b class="scheme_color d_block">$279.00</b>
-														</div>
-													</div>
-													<ul class="rating_list hr_list d_sm_inline_b">
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-														<li><i class="fa fa-star tr_all"></i></li>
-													</ul>
-												</figcaption>
-											</figure>
-										</div>
+										{% endfor %}
 									</div>
 								</div>
 							</div>
@@ -1471,7 +1340,7 @@
 												<figcaption class="bg_white relative">
 													<div class="row">
 														<div class="col-lg-7 col-md-7 m_bottom_7">
-															<a class="second_font sc_hover d_xs_block" href="#">Sed in lacus ut enim</a>
+															<a class="second_font sc_hover d_xs_block" href="#">Discount Living Room</a>
 															<a href="#" class="fw_light color_light sc_hover">Chaises</a>
 														</div>
 														<div class="col-lg-5 col-md-5 color_light fs_large second_font t_align_r t_sm_align_c m_bottom_5">
@@ -1634,113 +1503,7 @@
 					</div>
 				</div>
 			</div>
-			<!--brands carousel-->
-			<div class="section_offset">
-				<section class="container m_bottom_10">
-					<div class="d_table m_bottom_5 w_full animated hidden" data-animation="fadeInLeft">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 v_align_m d_table_cell f_none">
-							<h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">Brands</h5>	
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 t_align_r d_table_cell f_none">
-							<!--carousel navigation-->
-							<div class="clearfix d_inline_b">
-								<button class="brands_carousel_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
-								<button class="brands_carousel_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
-							</div>
-						</div>
-					</div>
-					<hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInLeft" data-animation-delay="100">
-					<!--carousel-->
-					<div class="row">
-						<div class="owl-carousel" data-nav="brands_carousel_" 
-							data-owl-carousel-options='{
-								"stagePadding" : 15,
-								"margin" : 30,
-								"responsive" : {
-										"0" : {
-											"items" : 2
-										},
-										"320" : {
-											"items" : 3
-										},
-										"550" : {
-											"items" : 4
-										},
-										"768" : {
-											"items" : 4
-										},
-										"992" : {
-											"items" : 5
-										},
-										"1200" : {
-											"items" : 6
-										}
-									}
-								}'>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="200">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_1.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="350">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_2.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="500">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_3.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="650">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_4.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="800">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_5.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="950">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_6.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="1100">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_1.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="1250">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_2.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="1400">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_3.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="1550">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_4.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="1700">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_5.jpg' %}" alt="">
-								</a>
-							</div>
-							<div class="animated hidden" data-animation="fadeInLeft" data-animation-delay="1850">
-								<a href="#" class="d_block frame_container">
-									<img src="{% static 'images/client_img_6.jpg' %}" alt="">
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
+
 			<!--customers-->
 			<div class="section_offset bg_grey_light_2">
 				<section class="container">
@@ -1777,9 +1540,9 @@
 							</a>
 							<figcaption>
 								<blockquote class="fw_light fs_large color_dark lh_medium m_bottom_15">
-									<i>Vestibulum sed ante. Donec sagittis euismod purus. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantim doloremque laudantim.</i>
+									<i>i just bought a cluster house, and bolehlands really helpful. it have many choose , i can measure how much money i need to spent.</i>
 								</blockquote>
-								<p class="second_font color_light m_bottom_3"><a href="#" class="sc_hover">Brenda Grosh</a>, New York</p>
+								<p class="second_font color_light m_bottom_3"><a href="#" class="sc_hover">Mr. Tay</a>,Taman University</p>
 								<ul class="rating_list hr_list">
 									<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
 									<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
@@ -1796,16 +1559,17 @@
 							</a>
 							<figcaption>
 								<blockquote class="fw_light fs_large color_dark lh_medium m_bottom_15">
-									<i>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos. Ut tellus dolor, dapibus eget, elementum vel.</i>
+									<i>This website provide me very useful details , not only just renovation , also including how to bought a house.</i>
 								</blockquote>
-								<p class="second_font color_light m_bottom_3"><a href="#" class="sc_hover">John McCoist</a>, Los Angeles</p>
+								<p class="second_font color_light m_bottom_3"><a href="#" class="sc_hover">Jessica Wu</a>, Johor Jaya</p>
 								<ul class="rating_list hr_list">
 									<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
 									<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
 									<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
 									<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
-									<li><i class="fa fa-star tr_all"></i></li>
-								</ul>
+									<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
+<!-- 									<li><i class="fa fa-star tr_all"></i></li>
+ -->								</ul>
 							</figcaption>
 						</figure>
 						<!--item-->
@@ -1849,193 +1613,7 @@
 					</div>
 				</section>
 			</div>
-			<!--blog-->
-			<div class="section_offset p_bottom_0">
-				<section class="container m_bottom_5">
-					<div class="d_table m_bottom_5 w_full hidden animated" data-animation="fadeInLeft">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-8 v_align_m d_table_cell f_none">
-							<h5 class="second_font color_dark tt_uppercase fw_light d_inline_m m_bottom_4">From The Blog</h5>	
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-4 t_align_r d_table_cell f_none">
-							<!--carousel navigation-->
-							<div class="clearfix d_inline_b">
-								<button class="blog_prev black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child m_right_5"><i class="fa fa-angle-left d_inline_m"></i></button>
-								<button class="blog_next black_hover button_type_4 grey state_2 tr_all d_block f_left vc_child"><i class="fa fa-angle-right d_inline_m"></i></button>
-							</div>
-						</div>
-					</div>
-					<hr class="divider_bg m_bottom_15 animated hidden" data-animation="fadeInLeft" data-animation-delay="100">
-					<!--carousel-->
-					<div class="row">
-						<div class="owl-carousel" data-nav="blog_" data-owl-carousel-options='{
-							"stagePadding" : 15,
-							"margin" : 30,
-							"responsive" : {
-									"0" : {
-										"items" : 1
-									},
-									"470" : {
-										"items" : 2
-									},
-									"992" : {
-										"items" : 3
-									}
-								}
-							}'>
-							<!--post-->
-							<div class="animated hidden" data-animation="fadeInDown" data-animation-delay="200">
-							<article class="frame_container scale_image_container">
-								<figure class="relative">
-									<a href="#" class="d_block wrapper m_bottom_15"><img src="{% static 'images/blog_img_1.jpg' %}" alt="" class="tr_all scale_image"></a>
-									<figcaption>
-										<div class="clearfix">
-											<!--post info (date & comments)-->
-											<div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
-												<div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
-													<b class="d_inline_b">22</b>
-													<p class="fs_ex_small">Jun</p>
-												</div>
-												<a href="#" class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">3</span></a>
-											</div>
-											<!--post excerpt-->
-											<div class="f_left post_excerpt m_bottom_15">
-												<h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Sed ut perspiciatis unde omnis iste</b></a></h5>
-												<p class="fw_light">Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.</p>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</article>
-							</div>
-							<!--post-->
-							<div class="animated hidden" data-animation="fadeInDown" data-animation-delay="350">
-							<article class="frame_container scale_image_container">
-								<figure class="relative">
-									<a href="#" class="d_block wrapper m_bottom_15"><img src="{% static 'images/blog_img_2.jpg' %}" alt="" class="tr_all scale_image"></a>
-									<figcaption>
-										<div class="clearfix">
-											<!--post info (date & comments)-->
-											<div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
-												<div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
-													<b class="d_inline_b">22</b>
-													<p class="fs_ex_small">Jun</p>
-												</div>
-												<a href="#" class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">77</span></a>
-											</div>
-											<!--post excerpt-->
-											<div class="f_left post_excerpt m_bottom_15">
-												<h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Donec sagittis euismod purus</b></a></h5>
-												<p class="fw_light">Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.</p>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</article>
-							</div>
-							<!--post-->
-							<div class="animated hidden" data-animation="fadeInDown" data-animation-delay="500">
-							<article class="frame_container scale_image_container">
-								<figure class="relative">
-									<a href="#" class="d_block wrapper m_bottom_15"><img src="{% static 'images/blog_img_3.jpg' %}" alt="" class="tr_all scale_image"></a>
-									<figcaption>
-										<div class="clearfix">
-											<!--post info (date & comments)-->
-											<div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
-												<div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
-													<b class="d_inline_b">22</b>
-													<p class="fs_ex_small">Jun</p>
-												</div>
-												<a href="#" class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">0</span></a>
-											</div>
-											<!--post excerpt-->
-											<div class="f_left post_excerpt m_bottom_15">
-												<h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Natus error sit voluptatem</b></a></h5>
-												<p class="fw_light">Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.</p>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</article>
-							</div>
-							<!--post-->
-							<div class="animated hidden" data-animation="fadeInDown" data-animation-delay="650">
-							<article class="frame_container scale_image_container">
-								<figure class="relative">
-									<a href="#" class="d_block wrapper m_bottom_15"><img src="{% static 'images/blog_img_1.jpg' %}" alt="" class="tr_all scale_image"></a>
-									<figcaption>
-										<div class="clearfix">
-											<!--post info (date & comments)-->
-											<div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
-												<div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
-													<b class="d_inline_b">22</b>
-													<p class="fs_ex_small">Jun</p>
-												</div>
-												<a href="#" class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">3</span></a>
-											</div>
-											<!--post excerpt-->
-											<div class="f_left post_excerpt m_bottom_15">
-												<h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Sed ut perspiciatis unde omnis iste</b></a></h5>
-												<p class="fw_light">Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.</p>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</article>
-							</div>
-							<!--post-->
-							<div class="animated hidden" data-animation="fadeInDown" data-animation-delay="800">
-							<article class="frame_container scale_image_container">
-								<figure class="relative">
-									<a href="#" class="d_block wrapper m_bottom_15"><img src="{% static 'images/blog_img_2.jpg' %}" alt="" class="tr_all scale_image"></a>
-									<figcaption>
-										<div class="clearfix">
-											<!--post info (date & comments)-->
-											<div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
-												<div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
-													<b class="d_inline_b">22</b>
-													<p class="fs_ex_small">Jun</p>
-												</div>
-												<a href="#" class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">77</span></a>
-											</div>
-											<!--post excerpt-->
-											<div class="f_left post_excerpt m_bottom_15">
-												<h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Donec sagittis euismod purus</b></a></h5>
-												<p class="fw_light">Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.</p>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</article>
-							</div>
-							<!--post-->
-							<div class="animated hidden" data-animation="fadeInDown" data-animation-delay="950">
-							<article class="frame_container scale_image_container">
-								<figure class="relative">
-									<a href="#" class="d_block wrapper m_bottom_15"><img src="{% static 'images/blog_img_3.jpg' %}" alt="" class="tr_all scale_image"></a>
-									<figcaption>
-										<div class="clearfix">
-											<!--post info (date & comments)-->
-											<div class="post_info f_left m_right_20 t_align_c lh_small m_sm_right_10">
-												<div class="date bg_scheme_color color_white second_font tt_uppercase m_bottom_15">
-													<b class="d_inline_b">22</b>
-													<p class="fs_ex_small">Jun</p>
-												</div>
-												<a href="#" class="sc_hover"><i class="fa fa-comments d_inline_m m_right_3"></i> <span class="fs_small d_inline_m">0</span></a>
-											</div>
-											<!--post excerpt-->
-											<div class="f_left post_excerpt m_bottom_15">
-												<h5 class="second_font m_bottom_13"><a href="#" class="sc_hover"><b>Natus error sit voluptatem</b></a></h5>
-												<p class="fw_light">Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum.</p>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</article>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
+		</div>
 			<div class="section_offset">
 				<div class="container">
 					<hr class="divider_lbrown m_bottom_25 animated hidden" data-animation="fadeInLeft" data-animation-delay="100">
@@ -2047,7 +1625,7 @@
 								<!--description-->
 								<div class="d_inline_m description w_sm_full">
 									<h3 class="second_font color_dark m_bottom_10">Safe &amp; Secure</h3>
-									<p class="fw_light m_bottom_10">Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue.</p>
+									<p class="fw_light m_bottom_10"><!-- Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. --></p>
 									<a href="#" class="sc_hover second_font">Click Here to Read More</a>
 								</div>
 							</section>
@@ -2059,7 +1637,7 @@
 								<!--description-->
 								<div class="d_inline_m description">
 									<h3 class="second_font color_dark m_bottom_10">Free Delivery</h3>
-									<p class="fw_light m_bottom_10">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maurisfermentum dictum.</p>
+									<p class="fw_light m_bottom_10"><!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maurisfermentum dictum. --></p>
 									<a href="#" class="sc_hover second_font">Click Here to Read More</a>
 								</div>
 							</section>
@@ -2071,7 +1649,7 @@
 								<!--description-->
 								<div class="d_inline_m description">
 									<h3 class="second_font color_dark m_bottom_10">Money Back Guarantee</h3>
-									<p class="fw_light m_bottom_10">Etiam cursus leo vel metus. Nulla facilisi aenean nac eros. Vestibulum ante ipsum.</p>
+									<p class="fw_light m_bottom_10"><!-- Etiam cursus leo vel metus. Nulla facilisi aenean nac eros. Vestibulum ante ipsum. --></p>
 									<a href="#" class="sc_hover second_font">Click Here to Read More</a>
 								</div>
 							</section>
@@ -2091,7 +1669,7 @@
 								<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Latest Tweets</h5>
 								<hr class="divider_bg m_bottom_10">
 								<!--twitter feed-->
-								<div class="tweets_list_container"></div>
+								<!-- <div class="tweets_list_container"></div> -->
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-4">
 								<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Stay Connected</h5>
@@ -2145,10 +1723,12 @@
 									<hr class="divider_bg m_bottom_25">
 									<div class="clearfix">
 										<img src="{% static 'images/mini_logo.jpg' %}" class="f_left m_top_10 m_right_20" alt="">
-										<p class="m_bottom_14 fw_light">Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus.</p>
-										<p class="m_bottom_10 fw_light">Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque.</p>
-										<a href="#" class="sc_hover second_font">Read More</a>
-									</div>
+										<p class="m_bottom_14 fw_light"> We provide one stop solution interior design & home renovation for customer's need. Our designer partners will listen your requirement, customised your home renovation case 
+
+</p>
+										<p class="m_bottom_10 fw_light">We promising a satisfied experience to you.	</p>
+<!-- 										<a href="#" class="sc_hover second_font">Read More</a>
+ -->									</div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-6 m_bottom_13 m_sm_bottom_30">
 									<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">The Services</h5>
@@ -2181,7 +1761,7 @@
 								<div class="col-lg-6 col-md-6 col-sm-6 m_bottom_13 m_sm_bottom_30">
 									<h5 class="color_dark tt_uppercase second_font fw_light m_bottom_13">Like Us On Facebook</h5>
 									<hr class="divider_bg m_bottom_15">
-									<iframe src="{% static 'http://www.facebook.com/plugins/likebox.php?href="{% static 'ttp%3A%2F%2Fwww.facebook.com%2Fthemeforest&amp;width=235&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=438889712801266" style="border:none; overflow:hidden; width:235px; height:258px;"></iframe>
+									<iframe src="http://www.facebook.com/plugins/likebox.php?href="http%3A%2F%2Fwww.facebook.com%2Fthemeforest&amp;width=235&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=438889712801266" style="border:none; overflow:hidden; width:235px; height:258px;"></iframe>
 								</div>
 							</div>
 						</div>
@@ -2318,7 +1898,7 @@
 						</div>
 					</div>
 					<div class="product_description f_left f_xs_none">
-						<h3 class="second_font m_bottom_3 product_title"><a href="#" class="sc_hover">Sed in lacus ut enim</a></h3>
+						<h3 class="second_font m_bottom_3 product_title"><a href="#" class="sc_hover">Discount Living Room</a></h3>
 						<div class="relative m_bottom_18">
 							<ul class="rating_list wrapper hr_list d_inline_m tr_all m_right_5">
 								<li class="color_lbrown"><i class="fa fa-star tr_all"></i></li>
@@ -2386,13 +1966,13 @@
 			<div class="popup init">
 				<div class="clearfix m_bottom_15">
 					<a href="#" class="f_left d_block m_right_20">
-						<img src="{% static 'images/bestsellers_img_1.jpg" alt="">
+						<img src="{% static 'images/bestsellers_img_1.jpg' %}" alt="">
 					</a>
 					<p class="second_font fs_large color_dark">1 x Eget elementum vel<br> was added to your cart</p>
 				</div>
 				<div class="clearfix">
 					<a href="#" class="button_type_2 d_block f_left t_align_c grey state_2 tr_all second_font fs_medium tt_uppercase m_top_15">Continue Shopping</a>
-					<a href="{% static 'pages_shopping_cart.html' %}" class="button_type_2 d_block f_right t_align_c grey state_2 tr_all second_font fs_medium tt_uppercase m_top_15">Show Cart</a>
+					<a href="#" class="button_type_2 d_block f_right t_align_c grey state_2 tr_all second_font fs_medium tt_uppercase m_top_15">Show Cart</a>
 				</div>
 				<button class="close_popup fw_light fs_large tr_all">x</button>
 			</div>
@@ -2410,7 +1990,7 @@
 		<script src="{% static 'plugins/twitter/jquery.tweet.min.js' %}"></script><script src="{% static 'plugins/flickr.js' %}"></script>
 		<script src="{% static 'plugins/afterresize.min.js' %}"></script>
 		<script src="{% static 'plugins/jackbox/js/jackbox-packed.min.js' %}"></script>
-		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
+	<!-- 	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid="></script> -->
 		<script src="{% static 'js/retina.min.js' %}"></script>
 
 		<!--theme initializer-->

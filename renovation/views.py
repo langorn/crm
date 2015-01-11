@@ -23,8 +23,13 @@ from renovation.models import Scene
 
 
 def index(request):
-	return render(request, 'renovation/index.html',{})
+	items = Scene.objects.all()
+	return render(request, 'renovation/index.html',{'items':items})
 
 def list(request):
 	scene = Scene.objects.all()
 	return render(request, 'renovation/portfolio_masonry.html',{'scene':scene})
+
+def scene_info(request, scene_id):
+	item = Scene.objects.get(pk=scene_id)
+	return render(request, 'renovation/scene_info.html',{'item':item})

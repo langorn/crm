@@ -41,7 +41,7 @@
 	padding:2px 0 29px;
 }
 .header_bottom_part.fixed{
-	position:fixed;
+	/*position:fixed;*/
 	top:0;
 	padding-bottom:2px;
 }
