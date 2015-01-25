@@ -33,3 +33,4 @@ def list(request):
 def scene_info(request, scene_id):
 	item = Scene.objects.get(pk=scene_id)
 	return render(request, 'renovation/scene_info.html',{'item':item})
+

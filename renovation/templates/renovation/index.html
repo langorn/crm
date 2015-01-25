@@ -28,6 +28,9 @@
 <!-- 		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/animate.css' %}">
  -->		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/bootstrap.min.css' %}">
 		<link rel="stylesheet" type="text/css" media="all" href="{% static 'css/style.css' %}">
+		<link rel="stylesheet" type="text/css" media="all" href="{% static 'js/Semantic-UI/dist/semantic.min.css' %}">
+
+
 		<!--[if lte IE 10]><link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/ie.css"><![endif]-->
 		<!--head libs-->
 		<!--[if lte IE 8]>
@@ -37,6 +40,7 @@
 		<![endif]-->
 		<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
 		<script src="{% static 'js/modernizr.js' %}"></script>
+		<script src="{% static 'js/Semantic-UI/dist/semantic.min.js' %}"></script>
 
 	
 	</head>
@@ -66,111 +70,6 @@
 				</div>
 			</div> -->
 			
-			<header role="banner" class="w_inherit">
-				<!--top part-->
-				<div class="header_top_part p_top_0 p_bottom_0">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-4 col-md-4 col-sm-4 t_xs_align_c htp_offset p_xs_top_0 p_xs_bottom_0">
-								<!--shop nav-->
-								<nav class="d_xs_inline_b">
-									<ul class="hr_list second_font si_list fs_small">
-										<li><a class="sc_hover tr_delay" href="account.html">My Account</a></li>
-										<li><a class="sc_hover tr_delay" href="orders_list.html">Orders List</a></li>
-										<li><a class="sc_hover tr_delay" href="wishlist.html">Wishlist</a></li>
-										<li><a class="sc_hover tr_delay" href="checkout.html">Checkout</a></li>
-									</ul>
-								</nav>
-							</div>
-							<div class="col-lg-4 col-md-5 col-sm-4 fs_small color_light fw_light t_xs_align_c htp_offset p_xs_top_0 p_xs_bottom_0">
-								<b class="scheme_color">Free shipping</b> on orders over $100. Need Help? <b class="scheme_color">866.526.3979</b>
-							</div>
-							<div class="col-lg-4 col-md-3 col-sm-4 t_align_r t_xs_align_c">
-								<div class="clearfix d_inline_b t_align_l">
-									<!--currency-->
-									<div class="f_right relative transform3d">
-										<button class="tr_all second_font color_dark fs_small type_2 m_sm_top_10 m_xs_top_0" data-open-dropdown="#currency">&#36;<i class="fa fa-angle-down d_inline_m m_left_25"></i></button>
-										<ul id="currency" data-show="wicket" data-hide="wicketout" class="sub_menu dropdown fs_medium bg_grey_light second_font animated">
-											<li>
-												<a href="#" class="sc_hover">
-													&#36; US Dollar
-												</a>
-											</li>
-											<li>
-												<a href="#" class="sc_hover">
-													&#163; Pound Sterling
-												</a>
-											</li>
-											<li>
-												<a href="#" class="sc_hover">
-													&#8364; Euro
-												</a>
-											</li>
-										</ul>
-									</div>
-									<!--language-->
-									<div class="f_right relative transform3d">
-										<button class="tr_all second_font color_dark type_2 m_sm_top_10 m_xs_top_0" data-open-dropdown="#language">
-											<img src="{% static 'images/flag_en.jpg' %}" alt="" class="d_inline_m m_right_10"><i class="fa fa-angle-down d_inline_m fs_small"></i>
-										</button>
-										<ul id="language" data-show="wicket" data-hide="wicketout" class="sub_menu dropdown fs_medium bg_grey_light second_font animated">
-											<li>
-												<a href="#" class="sc_hover">
-													<img src="{% static 'images/flag_en.jpg' %}" alt="" class="d_inline_m m_right_7">
-													English
-												</a>
-											</li>
-											<li>
-												<a href="#" class="sc_hover">
-													<img src="{% static 'images/flag_g.jpg' %}" alt="" class="d_inline_m m_right_7">
-													German
-												</a>
-											</li>
-											<li>
-												<a href="#" class="sc_hover">
-													<img src="{% static 'images/flag_s.jpg' %}" alt="" class="d_inline_m m_right_7">
-													Spanish
-												</a>
-											</li>
-										</ul>
-									</div>
-									<!--login-->
-									<div class="f_right relative transform3d">
-										<button class="tr_all second_font color_dark type_2 m_sm_top_10 m_xs_top_0" data-open-dropdown="#login"><i class="fa fa-user d_inline_m m_right_5"></i> <span class="fs_small">Login</span></button>
-										<div id="login" data-show="fadeInUp" data-hide="fadeOutDown" class="dropdown bg_grey_light login_dropdown animated">
-											<form class="m_bottom_15">
-												<ul>
-													<li class="m_bottom_15">
-														<label for="username" class="second_font m_bottom_4 d_inline_b fs_medium">Username</label>
-														<input type="text" name="" id="username" class="w_full tr_all">
-													</li>
-													<li class="m_bottom_20">
-														<label for="password" class="second_font m_bottom_4 d_inline_b fs_medium">Password</label>
-														<input type="password" name="" id="password" class="w_full tr_all">
-													</li>
-													<li class="m_bottom_20">
-														<input type="checkbox" name="" id="remember_me">
-														<label for="remember_me" class="second_font fs_medium">Remember me</label>
-													</li>
-													<li>
-														<button class="t_align_c tt_uppercase w_full second_font d_block fs_medium button_type_2 lbrown tr_all">Log In</button>
-													</li>
-												</ul>
-											</form>
-											<div class="m_bottom_14 t_align_c">
-												<a href="#" class="second_font sc_hover fs_small">Forgot your password?</a><br>
-												<a href="#" class="second_font sc_hover fs_small">Forgot your username?</a>
-											</div>
-											<hr class="divider_white m_bottom_25">
-											<h5 class="color_dark tt_uppercase second_font t_align_c m_bottom_15 fw_light">New Customer?</h5>
-											<a href="#" role="button" class="button_type_2 tt_uppercase fs_medium second_font d_block t_align_c black state_2">Create An Account</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<hr class="m_bottom_27 m_sm_bottom_10">
 				<div class="header_bottom_part bg_white type_2 t_sm_align_c w_inherit">
 					<div class="container">
@@ -178,7 +77,7 @@
 							<div class="col-lg-2 col-md-2 d_sm_block w_sm_full d_table_cell d_xs_block f_none v_align_m m_xs_bottom_15">
 								<!--logo-->
 								<a href="/" class="d_inline_b m_sm_top_5 m_sm_bottom_5 m_xs_bottom_0">
-									<img src="{% static 'images/logo.png'%} " alt="">
+									<img src="{% static 'images/bolehland1.png'%} " alt="">
 								</a>
 							</div>
 							<div class="col-lg-8 col-md-8 d_sm_block w_sm_full d_table_cell d_xs_block f_none v_align_m">
@@ -187,7 +86,7 @@
 								<nav role="navigation" class="d_xs_none">
 									<ul class="main_menu relative type_2 d_sm_inline_b d_xs_block t_sm_align_l hr_list second_font fs_medium">
 										<li>
-											<a href="index.html" class="tt_uppercase tr_delay">Home <i class="fa fa-caret-down tr_inherit d_inline_m m_left_5 m_md_left_2"></i></a>
+											<a href="/" class="tt_uppercase tr_delay">Home <i class="fa fa-caret-down tr_inherit d_inline_m m_left_5 m_md_left_2"></i></a>
 											<!--sub menu (second level)-->
 											<ul class="sub_menu bg_grey_light tr_all">
 												<li><a href="/">Home v1</a></li>
@@ -196,16 +95,7 @@
 												<li><a href="/">Home v4</a></li>
 											</ul>
 										</li>
-										<li>
-											<a href="index.html" class="tt_uppercase tr_delay">Sliders <i class="fa fa-caret-down tr_inherit d_inline_m m_left_5 m_md_left_2"></i></a>
-											<!--sub menu (second level)-->
-											<ul class="sub_menu bg_grey_light tr_all">
-												<li><a href="index_v4.html">Revolution</a></li>
-												<li><a href="index_v3.html">Flex</a></li>
-												<li><a href="index.html">Layer</a></li>
-												<li><a href="index_v2.html">Royal</a></li>
-											</ul>
-										</li>
+
 										<li>
 											<a class="tt_uppercase tr_delay">Shop <i class="fa fa-caret-down tr_inherit d_inline_m m_left_5"></i></a>
 											<div class="mega_menu bg_grey_light tr_all">
@@ -306,14 +196,14 @@
 												<li><a href="page_404.html">404 page</a></li>
 											</ul>
 										</li>
-										<li>
+<!-- 										<li>
 											<a href="features_elements.html" class="tt_uppercase tr_delay">Features <i class="fa fa-caret-down tr_inherit d_inline_m m_left_5 m_md_left_2"></i></a>
 											<ul class="sub_menu bg_grey_light tr_all">
 												<li><a href="features_elements.html">Elements</a></li>
 												<li><a href="features_typography.html">Typography</a></li>
 												<li><a href="features_columns.html">Columns</a></li>
 											</ul>
-										</li>
+										</li> -->
 										<li>
 											<a href="blog.html" class="tt_uppercase tr_delay">Blog <i class="fa fa-caret-down tr_inherit d_inline_m m_left_5 m_md_left_2"></i></a>
 											<ul class="sub_menu bg_grey_light tr_all">
